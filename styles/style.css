@@ -1,0 +1,71 @@
+/* 
+selectores de css
+id
+class
+elemento
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+ font-family: 'Montserrat', sans-serif;
+ margin:0 ;
+ padding: 0 ;
+ box-sizing: border-box;
+}
+/* Estilos del header
+*/
+
+.navbar-custom {
+    /* Fondo oscuro, casi negro, con opacidad o efecto mate */
+    background-color: #1a1a1a !important; 
+    border-bottom: 1px solid #333; /* Separación sutil */
+    font-family: 'Arial', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Marca (F1 Total) */
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Enlaces de Navegación */
+.navbar-custom .nav-link {
+    color: #cccccc; /* Gris claro */
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-left: 20px;
+    padding: 5px 0;
+    text-transform: uppercase; /* Los enlaces están en mayúsculas en el diseño */
+    transition: color 0.2s ease;
+}
+
+/* Estado Activo y Hover */
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+    color: #e10600; /* Rojo vibrante de F1 */
+}
+
+/* Icono Hamburguesa (Toggler) */
+.navbar-custom .navbar-toggler {
+    border: none;
+    padding: 0;
+}
+.navbar-custom .navbar-toggler-icon {
+    /* Hace el ícono blanco para que contraste con el fondo oscuro */
+    filter: invert(1); 
+}
+
+
+
+/* Ajuste para vista móvil: el banner puede ser más pequeño */
+@media (max-width: 991.98px) {
+    .f1-hero-track {
+        height: 100px;
+        /* Puedes ajustar la posición del fondo para móvil */
+        background-position: center center;
+    }
+}
