@@ -1,77 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Una web sobre la Formula 1</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles/style.css">
-  <title>Una web sobre la Formula 1</title>
-</head>
-
-<body>
-  
-
-<header class="f1-header-container">
-    <nav class="navbar navbar-expand-lg navbar-custom">
+  <body>
+    <header class="f1-header-container">
+      <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">F1 Total</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/parrilla.html">PARRILLA ACTUAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/multimedia.html">MULTIMEDIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/clasificacion.html">CLASIFICACIÓN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/eventos.html">EVENTOS PRESENCIALES</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="#">F1 Total</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/parrilla.html"
+                  >PARRILLA ACTUAL</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/multimedia.html"
+                  >MULTIMEDIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/clasificacion.html"
+                  >CLASIFICACIÓN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/eventos.html"
+                  >EVENTOS PRESENCIALES</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    
-</header>
+      </nav>
+    </header>
 
-  <main>
-    <h1 id="titulo-principal">Fórmula 1: La máxima velocidad en un solo sitio</h1>
-    <!-- cards -->
-    <section>
+    <main>
+      <div class="parent">
+        <div class="div1">
+          <h1 class="f1-title-main">
+            Bienvenido a la comunidad de F1 en el Perú
+          </h1>
+          <img
+            src="./assets/img/lasvegasgp.jpg"
+            alt="carrera de f1 gp las vegas"
+          />
+        </div>
 
-    </section>
+        <div class="div2">
+          <h2>Últimas Noticias</h2>
 
-    <!-- imagenes -->
-    <section></section>
+          <article class="f1-news-item">
+            <h3 class="f1-news-title text-danger">
+              RESUMEN GP DE MÉXICO: Locura en el Autódromo Hermanos Rodríguez
+            </h3>
+            <p class="f1-news-summary">
+              La carrera nos dejó al borde del asiento. Revisamos la estrategia
+              ganadora de Mclaren y el desempeño de Ferrari. ¡Análisis completo
+              aquí!
+            </p>
+            <a href="#" class="f1-news-link">Leer más &gt;</a>
+          </article>
 
+          <article class="f1-news-item">
+            <h3 class="f1-news-title">
+              ¿Quién detendrá a Lando? Análisis y predicciones para el título de
+              2025
+            </h3>
+            <p class="f1-news-summary">
+              Con las nuevas regulaciones en el horizonte, analizamos qué
+              equipos tienen la mejor oportunidad de desafiar el dominio de
+              Mclaren la próxima temporada.
+            </p>
+            <a href="#" class="f1-news-link">Leer más &gt;</a>
+          </article>
 
-    <!-- contenido extra -->
-    <section></section>
-  </main>
+          <article class="f1-news-item mb-0">
+            <h3 class="f1-news-title">
+              OFICIAL: El borrador del Calendario F1 2026 y la inclusión de
+              Madrid
+            </h3>
+            <p class="f1-news-summary">
+              Todos los detalles sobre las 24 carreras programadas para la
+              temporada 2026 y las implicaciones de los nuevos circuitos
+              urbanos.
+            </p>
+            <a href="#" class="f1-news-link">Leer más &gt;</a>
+          </article>
+        </div>
 
-  <footer>
-    <ul>
-      <li><a href="">Facebook</li>
-      <li><a href="">Instagram</li>
-      <li><a href="">Tiktok</li>
-    </ul>
-  </footer>
+        <div class="div3">
+          <div class="f1-card-content multimedia-container">
+            <h2>Multimedia destacada</h2>
 
+            <div class="f1-carousel-wrapper">
+              <div class="f1-video-item active">
+                <div class="f1-embed-responsive">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/FZyMbSav0wE?si=LxP56CyKigBC0pHC"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="f1-video-caption">
+                  Highlights Oficiales: Lo mejor del GP de México.
+                </p>
+              </div>
 
+              <div class="f1-video-item next">
+                <div class="f1-embed-responsive">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/FZyMbSav0wE?si=LxP56CyKigBC0pHC"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p class="f1-video-caption">
+                  ANALISIS | LOS NUEVOS MONOPLAZAS DE F1 EN 2026
+                </p>
+              </div>
 
+              <div class="f1-carousel-nav">
+                <button class="f1-nav-btn prev">&lt;</button>
+                <button class="f1-nav-btn next">&gt;</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+        <div class="div4">
+          <div class="f1-card-sidebar h-100">
+            <h2>Clasificación</h2>
 
+            <ul class="f1-ranking-list">
+              <li>
+                <span class="f1-position position-1">1</span>
+                <span>Lando Norris</span> <span class="f1-points">357 pts</span>
+              </li>
+              <li>
+                <span class="f1-position position-2">2</span>
+                <span>Oscar Piastri</span>
+                <span class="f1-points">356 pts</span>
+              </li>
+              <li>
+                <span class="f1-position position-3">3</span>
+                <span>Max Verstappen</span>
+                <span class="f1-points">321 pts</span>
+              </li>
+            </ul>
+
+            <a href="./pages/clasificacion.html" class="f1-btn-schedule"
+              >Ver clasificación completa</a
+            >
+          </div>
+        </div>
+
+        <div class="div5">
+          <div class="f1-card-content gp-info h-100">
+            <h2>Próximo GP</h2>
+
+            <p class="f1-gp-name">Gran Premio de Brasil</p>
+            <p class="f1-gp-track">Autódromo José Carlos Pace (Interlagos)</p>
+
+            <div class="f1-circuit-image-wrapper">
+              <img
+                src="./assets/img/interlagos.avif"
+                alt="Circuito de Interlagos"
+                class="f1-circuit-image"
+              />
+            </div>
+
+            <div class="f1-gp-details">
+              <p>
+                Fecha: <span class="f1-detail-highlight">09 de Noviembre</span>
+              </p>
+              <p>
+                Hora: <span class="f1-detail-highlight">12:00 PM (Perú)</span>
+              </p>
+            </div>
+
+            <a href="#" class="f1-btn-schedule">Ver Horarios Completos</a>
+          </div>
+        </div>
+
+        <div class="div6">
+          <div class="f1-card-content event-cta h-100">
+            <h2>Únete a nuestras reuniones</h2>
+
+            <p class="f1-event-pitch">
+              No te pierdas las proyecciones y reuniones exclusivas de la
+              comunidad F1 Total Perú.
+            </p>
+
+            <i class="f1-icon-meeting">🏎️</i>
+
+            <a href="#" class="f1-btn-schedule">¡Regístrate Ahora!</a>
+          </div>
+        </div>
+
+        <div class="div7">
+          <div class="f1-card-content shop-coming-soon h-100">
+            <h2>Tienda</h2>
+
+            <i class="f1-icon-shop">🛒</i>
+
+            <p class="f1-coming-soon-message">¡Llegando en la próxima fase!</p>
+
+            <p class="f1-coming-soon-label">Próximamente</p>
+
+            <p class="small f1-shop-pitch">
+              Estaremos ofreciendo artículos, *merchandising* y recuerdos
+              exclusivos de F1 Total.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="f1-footer">
+      <div class="f1-footer-container">
+        <div class="f1-footer-col logo-section">
+          <a href="#" class="f1-footer-logo">F1 Total</a>
+          <p class="f1-copyright">
+            © 2025 F1 Total Perú. Todos los derechos reservados.
+          </p>
+          <p class="f1-disclaimer">
+            *F1 Total no es un sitio web oficial de la Fórmula 1. Los logos y
+            nombres son propiedad de sus respectivos dueños.
+          </p>
+        </div>
+
+        <div class="f1-footer-col social-media">
+          <h3>Síguenos</h3>
+          <div class="f1-social-icons">
+            <a href="#" class="f1-icon twitter" aria-label="Twitter F1 Total">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a
+              href="#"
+              class="f1-icon instagram"
+              aria-label="Instagram F1 Total"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="f1-icon facebook" aria-label="Facebook F1 Total">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <a href="#" class="f1-contact-link">contacto@f1total.pe</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
