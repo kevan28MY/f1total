@@ -1,58 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Los protagonistas</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="f1-header-container">
-    <nav class="navbar navbar-expand-lg navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">F1 Total</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">PARRILLA ACTUAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./multimedia.html">MULTIMEDIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./clasificacion.html">CLASIFICACIÓN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./eventos.html">EVENTOS PRESENCIALES</a>
-                    </li>
-                </ul>   
-            </div>
+          <a class="navbar-brand" href="#">F1 Total</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">PARRILLA ACTUAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./multimedia.html">MULTIMEDIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./clasificacion.html"
+                  >CLASIFICACIÓN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./eventos.html"
+                  >EVENTOS PRESENCIALES</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    
-</header>
-    <main>
-        <h2>
-            Pilotos y equipos
-        </h2>
+      </nav>
+    </header>
+
+    <main class="f1-parrilla-main">
+      <div class="f1-parrilla-container">
+        <h1 class="f1-page-title">Parrilla Actual F1 2025</h1>
+
+        <section class="f1-section f1-teams-grid">
+          <h2>Escuderías y Pilotos</h2>
+
+          <ul class="f1-team-cards-list" id="driver-cards-list">
+            <li class="f1-team-card team-redbull" data-team="redbull">
+              <h3 class="team-name">Red Bull Racing</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="verstappen">
+                  <img
+                    src="../assets/img/mverstappen_2025.png"
+                    alt="Max Verstappen"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Verstappen</p>
+                </div>
+                <div class="driver-item" data-driver="tsunoda">
+                  <img
+                    src="../assets/img/tsunoda.png"
+                    alt="Yuki Tsunoda"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Tsunoda</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-mclaren" data-team="mclaren">
+              <h3 class="team-name">McLaren</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="norris">
+                  <img
+                    src="../assets/img/norris.avif"
+                    alt="Lando Norris"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Norris</p>
+                </div>
+                <div class="driver-item" data-driver="piastri">
+                  <img
+                    src="../assets/img/piastri.png"
+                    alt="Oscar Piastri"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Piastri</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-mercedes" data-team="mercedes">
+              <h3 class="team-name">Mercedes</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="russell">
+                  <img
+                    src="../assets/img/russell.avif"
+                    alt="George Russell"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Russell</p>
+                </div>
+                <div class="driver-item" data-driver="antonelli">
+                  <img
+                    src="../assets/img/kantonelli_2025.png"
+                    alt="Andrea Kimi Antonelli"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Antonelli</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-ferrari" data-team="ferrari">
+              <h3 class="team-name">Scuderia Ferrari</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="leclerc">
+                  <img
+                    src="../assets/img/cleclerc_2025.png"
+                    alt="Charles Leclerc"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Leclerc</p>
+                </div>
+                <div class="driver-item" data-driver="hamilton">
+                  <img
+                    src="../assets/img/lhamilton_2025.png"
+                    alt="Lewis Hamilton"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Hamilton</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-astonmartin" data-team="astonmartin">
+              <h3 class="team-name">Aston Martin</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="alonso">
+                  <img
+                    src="../assets/img/falonso_2025.png"
+                    alt="Fernando Alonso"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Alonso</p>
+                </div>
+                <div class="driver-item" data-driver="stroll">
+                  <img
+                    src="../assets/img/lstroll_2025.png"
+                    alt="Lance Stroll"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Stroll</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-alpine" data-team="alpine">
+              <h3 class="team-name">Alpine</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="gasly">
+                  <img
+                    src="../assets/img/pgasly_2025.png"
+                    alt="Pierre Gasly"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Gasly</p>
+                </div>
+                <div class="driver-item" data-driver="colapinto">
+                  <img
+                    src="../assets/img/franco-colapinto-2025-soymotor.png"
+                    alt="Franco Colapinto"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Colapinto</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-haas" data-team="haas">
+              <h3 class="team-name">Haas</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="ocon">
+                  <img
+                    src="../assets/img/eocon_2025.png"
+                    alt="Esteban Ocon"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Ocon</p>
+                </div>
+                <div class="driver-item" data-driver="bearman">
+                  <img
+                    src="../assets/img/obearman_2025.png"
+                    alt="Oliver Bearman"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Bearman</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-sauber" data-team="sauber">
+              <h3 class="team-name">Stake F1 Team Kick Sauber</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="hulkenberg">
+                  <img
+                    src="../assets/img/nhulkenberg_2025.png"
+                    alt="Nico Hülkenberg"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Hülkenberg</p>
+                </div>
+                <div class="driver-item" data-driver="bortoleto">
+                  <img
+                    src="../assets/img/gbortoleto_2025.png"
+                    alt="Gabriel Bortoleto"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Bortoleto</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-williams" data-team="williams">
+              <h3 class="team-name">Williams</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="albon">
+                  <img
+                    src="../assets/img/aalbon_2025.png"
+                    alt="Alex Albon"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Albon</p>
+                </div>
+                <div class="driver-item" data-driver="sainz">
+                  <img
+                    src="../assets/img/csainz_2025.png"
+                    alt="Carlos Sainz"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Sainz</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="f1-team-card team-vcarb" data-team="vcarb">
+              <h3 class="team-name">Visa Cash App RB F1 Team</h3>
+              <div class="f1-driver-pair">
+                <div class="driver-item" data-driver="lawson">
+                  <img
+                    src="../assets/img/liam-lawson-racing-bulls-2025.png"
+                    alt="Liam Lawson"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Lawson</p>
+                </div>
+                <div class="driver-item" data-driver="hadjar">
+                  <img
+                    src="../assets/img/ihadjar_2025.png"
+                    class="driver-photo"
+                  />
+                  <p class="driver-label">Hadjar</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
-    <footer>
-        <ul>
-            <li><a href="">Facebook</li>
-            <li><a href="">Instagram</li>
-            <li><a href="">Tiktok</li>
-        </ul>
+    <footer class="f1-footer">
+      <div class="f1-footer-container">
+        <div class="f1-footer-col logo-section">
+          <a href="#" class="f1-footer-logo">F1 Total</a>
+          <p class="f1-copyright">
+            © 2025 F1 Total Perú. Todos los derechos reservados.
+          </p>
+          <p class="f1-disclaimer">
+            *F1 Total no es un sitio web oficial de la Fórmula 1. Los logos y
+            nombres son propiedad de sus respectivos dueños.
+          </p>
+        </div>
+
+        <div class="f1-footer-col social-media">
+          <h3>Síguenos</h3>
+          <div class="f1-social-icons">
+            <a href="#" class="f1-icon twitter" aria-label="Twitter F1 Total">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a
+              href="#"
+              class="f1-icon instagram"
+              aria-label="Instagram F1 Total"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="f1-icon facebook" aria-label="Facebook F1 Total">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <a href="#" class="f1-contact-link">contacto@f1total.pe</a>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cardList = document.getElementById("driver-cards-list");
+        const driverItems = cardList.querySelectorAll(".driver-item");
+
+        // Función para manejar el clic en un piloto
+        driverItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            // 1. Verificar si ya hay una selección activa
+            const isSelected = item.classList.contains("is-selected");
+
+            // 2. Limpiar selecciones previas
+            driverItems.forEach((d) => d.classList.remove("is-selected"));
+            cardList.classList.remove("is-active");
+
+            // 3. Si el piloto NO estaba seleccionado, activarlo
+            if (!isSelected) {
+              item.classList.add("is-selected");
+              cardList.classList.add("is-active");
+            }
+            // Si SÍ estaba seleccionado, la lista se limpia, volviendo al estado normal
+          });
+        });
+
+        // Opcional: Desactivar al hacer clic fuera de la lista
+        document.addEventListener("click", function (event) {
+          if (!cardList.contains(event.target)) {
+            driverItems.forEach((d) => d.classList.remove("is-selected"));
+            cardList.classList.remove("is-active");
+          }
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

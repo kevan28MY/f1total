@@ -1,59 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Comunidad F1</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="f1-header-container">
-    <nav class="navbar navbar-expand-lg navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">F1 Total</a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./parrilla.html">PARRILLA ACTUAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./multimedia.html">MULTIMEDIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./clasificacion.html">CLASIFICACIÓN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./eventos.html">EVENTOS PRESENCIALES</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="#">F1 Total</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./parrilla.html">PARRILLA ACTUAL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./multimedia.html">MULTIMEDIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./clasificacion.html"
+                  >CLASIFICACIÓN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./eventos.html"
+                  >EVENTOS PRESENCIALES</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    
-</header>
-    <main>
-        <h2>
-            Participa de las reuniones que organiza la comunidad.
-        </h2>
-    </main>
+      </nav>
+    </header>
 
+    <main class="f1-eventos-main">
+    <div class="f1-eventos-container">
+        
+        <h1 class="f1-page-title">Calendario de Eventos F1 2025</h1>
+        
+        <section class="f1-section f1-calendar-schedule">
+            <h2>Próximos Grandes Premios</h2>
+            
+            <ul class="f1-event-list">
+                
+                <li class="f1-event-item">
+                    <div class="event-date">
+                        <span class="day">19</span>
+                        <span class="month">Oct</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="gp-name">F1 Gran Premio de Estados Unidos</h3>
+                        <p class="gp-track">Cirucito de las Americas</p>
+                    </div>
+                    <div class="event-status">
+                        <span class="status-live">Finalizada</span>
+                    </div>
+                </li>
 
-    <footer>
-        <ul>
-            <li><a href="">Facebook</li>
-            <li><a href="">Instagram</li>
-            <li><a href="">Tiktok</li>
-        </ul>
+                <li class="f1-event-item">
+                    <div class="event-date">
+                        <span class="day">26</span>
+                        <span class="month">Oct</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="gp-name">F1 Gran Premio de Mexico</h3>
+                        <p class="gp-track">Hermanods Rodriguez</p>
+                    </div>
+                    <div class="event-status">
+                        <span class="status-live">Finalizada</span>
+                    </div>
+                </li>
+
+                <li class="f1-event-item upcoming-event">
+                    <div class="event-date event-date-highlight">
+                        <span class="day">09</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="gp-name gp-name-highlight">F1 Gran Premio de Brazil</h3>
+                        <p class="gp-track">Interlagos</p>
+                    </div>
+                    <div class="event-status">
+                        <span class="status-upcoming">Próxima</span>
+                    </div>
+                </li>
+                
+                <li class="f1-event-item">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Nov</span>
+                    </div>
+                    <div class="event-details">
+                        <h3 class="gp-name">F1 Gran Premio de Las Vegas</h3>
+                        <p class="gp-track">Las Vegas Strip Circuit</p>
+                    </div>
+                    <div class="event-status">
+                        <span class="status-pending">Pendiente</span>
+                    </div>
+                </li>
+
+            </ul>
+            
+            <a href="#" class="f1-btn-schedule-full">Ver Calendario Completo (24 Eventos)</a>
+        </section>
+
+        <section class="f1-section f1-meeting-registration">
+            <h2>Regístrate para Nuestras Reuniones F1</h2>
+            
+            <p class="form-pitch">
+                Déjanos tus datos para recibir notificaciones sobre nuestras reuniones y eventos especiales
+                mientras vemos las carreras. ¡Únete a la comunidad!
+            </p>
+
+            <form action="#" method="POST" class="f1-form">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Max Verstappen">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@f1fan.com">
+                </div>
+                <div class="form-group">
+                    <label for="numero">Celular <span class="required">*</span></label>
+                    <input type="text" id="numero" name="numero" required placeholder="999999999">
+                </div>
+
+                <div class="form-group">
+                    <label for="equipo_favorito">Equipo Favorito</label>
+                    <select id="equipo_favorito" name="equipo_favorito">
+                        <option value="">Selecciona un equipo</option>
+                        <option value="RedBull">Red Bull Racing</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Mercedes">Mercedes-AMG F1</option>
+                        <option value="Williams">Williams</option>
+                        <option value="McLaren">McLaren</option>
+                        <option value="Haas">Haas</option>
+                        <option value="AstonMartin">Aston Martin</option>
+                        <option value="Alpine">Alpine</option>
+                        <option value="Sauber">Kick Sauber</option>
+                        <option value="RacingBulls">Racing Bulls</option>
+                        </select>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="acepto_reuniones" name="acepto_reuniones" required>
+                    <label for="acepto_reuniones">Acepto recibir información sobre reuniones.</label>
+                </div>
+
+                <button type="submit" class="f1-submit-btn">Registrarme al evento</button>
+            </form>
+        </section>
+
+    </div>
+</main>
+
+    <footer class="f1-footer">
+      <div class="f1-footer-container">
+        <div class="f1-footer-col logo-section">
+          <a href="#" class="f1-footer-logo">F1 Total</a>
+          <p class="f1-copyright">
+            © 2025 F1 Total Perú. Todos los derechos reservados.
+          </p>
+          <p class="f1-disclaimer">
+            *F1 Total no es un sitio web oficial de la Fórmula 1. Los logos y
+            nombres son propiedad de sus respectivos dueños.
+          </p>
+        </div>
+
+        <div class="f1-footer-col social-media">
+          <h3>Síguenos</h3>
+          <div class="f1-social-icons">
+            <a href="#" class="f1-icon twitter" aria-label="Twitter F1 Total">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a
+              href="#"
+              class="f1-icon instagram"
+              aria-label="Instagram F1 Total"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="f1-icon facebook" aria-label="Facebook F1 Total">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <a href="#" class="f1-contact-link">contacto@f1total.pe</a>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
