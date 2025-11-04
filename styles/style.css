@@ -10,6 +10,7 @@ elemento
  margin:0 ;
  padding: 0 ;
  box-sizing: border-box;
+ 
 }
 /* Estilos del header
 */
@@ -514,6 +515,7 @@ estilos footer
     background-color: #111; 
     color: #ccc;
     padding: 40px 20px;
+    margin-top: 0 !important;
     border-top: 5px solid #e10600; 
     font-family: Arial, sans-serif;
 }
@@ -649,5 +651,141 @@ estilos footer
     }
     .f1-social-icons {
         justify-content: flex-start;
+    }
+}
+
+
+
+
+/* 
+-------------------------pagina parrilla ---------------------------------------------------
+*/
+.f1-parrilla-main{
+    background-color: #1a1a1a;
+}
+
+.f1-team-cards-list {
+    list-style: none;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+
+}
+
+.f1-team-card {
+    background-color: #0d0d0d; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-top: 5px solid transparent; 
+    transition: box-shadow 0.2s;
+}
+
+.f1-team-card .team-name {
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 10px 10px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font-weight: 800;
+}
+.f1-page-title {
+    font-size: 2.8rem;
+    color: #e10600;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #e10600; 
+}
+
+.f1-section h2 {
+    font-size: 1.8rem;
+    color: #fff; 
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    border-left: 4px solid #fff; 
+}
+
+.f1-driver-pair {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.driver-item {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.driver-photo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    filter: grayscale(0.2);
+    transition: filter 0.3s;
+}
+
+.driver-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ccc;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.team-redbull { border-color: #0000a0; }
+.team-ferrari { border-color: #e10600; }
+.team-mercedes { border-color: #00d2be; }
+.team-mclaren { border-color: #ff8700; }
+.team-astonmartin { border-color: #00665e; } 
+.team-alpine { border-color: #0076b6; }      
+.team-haas { border-color: #ffffff; }        
+.team-sauber { border-color: #52e252; }      
+.team-williams { border-color: #005a96; }     
+.team-vcarb { border-color: #00f0ff; }
+
+.f1-team-cards-list.is-active .driver-item {
+    opacity: 0.3; 
+    transform: scale(0.95);
+}
+
+
+.f1-team-cards-list.is-active .driver-item.is-selected {
+    opacity: 1; 
+    transform: scale(1.05); 
+}
+.f1-team-cards-list.is-active .driver-item.is-selected .driver-photo {
+    filter: none; 
+}
+
+
+@media (min-width: 320px) and (max-width:430px) {
+    f1-team-cards-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .f1-team-cards-list {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+    .f1-page-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .f1-section h2 {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .driver-photo {
+        max-width: 100px;
     }
 }
