@@ -1,0 +1,149 @@
+@use 'variables';
+@use 'sass:map';
+
+.f1-parrilla-main {
+    background-color: variables.$color-dark-bg;
+    margin-bottom: 0px;
+}
+
+.f1-team-cards-list {
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.f1-team-card {
+    background-color: variables.$color-darkest-bg;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-top: 5px solid transparent;
+    transition: box-shadow 0.2s;
+}
+
+.f1-team-card .team-name {
+    font-size: 1.3rem;
+    color: variables.$color-text-light;
+    text-transform: uppercase;
+    padding: 15px 10px 10px;
+    text-align: center;
+    border-bottom: 1px solid variables.$color-border-dark;
+    font-weight: 800;
+}
+
+
+
+.f1-driver-pair {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.driver-item {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.driver-photo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    filter: grayscale(0.2);
+    transition: filter 0.3s;
+}
+
+.driver-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: variables.$color-text-medium;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+.team-redbull {
+    border-color: map.get(variables.$team-colors, "redbull");
+}
+
+.team-ferrari {
+    border-color: map.get(variables.$team-colors, "ferrari");
+}
+
+.team-mercedes {
+    border-color: map.get(variables.$team-colors, "mercedes");
+}
+
+.team-mclaren {
+    border-color: map.get(variables.$team-colors, "mclaren");
+}
+
+.team-astonmartin {
+    border-color: map.get(variables.$team-colors, "astonmartin");
+}
+
+.team-alpine {
+    border-color: map.get(variables.$team-colors, "alpine");
+}
+
+.team-haas {
+    border-color: map.get(variables.$team-colors, "haas");
+}
+
+.team-sauber {
+    border-color: map.get(variables.$team-colors, "sauber");
+}
+
+.team-williams {
+    border-color: map.get(variables.$team-colors, "williams");
+}
+
+.team-vcarb {
+    border-color: map.get(variables.$team-colors, "vcarb");
+}
+
+.f1-team-cards-list.is-active .driver-item {
+    opacity: 0.3;
+    transform: scale(0.95);
+}
+
+
+.f1-team-cards-list.is-active .driver-item.is-selected {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.f1-team-cards-list.is-active .driver-item.is-selected .driver-photo {
+    filter: none;
+}
+
+
+@media (min-width: 320px) and (max-width:430px) {
+    .f1-team-cards-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .f1-page-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .f1-section h2 {
+        font-size: 1.4rem;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .driver-photo {
+        max-width: 100px;
+    }
+}

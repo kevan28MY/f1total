@@ -1,0 +1,136 @@
+@use 'variables';
+@use 'sass:map';
+
+.f1-store-main {
+    padding: 40px 0;
+    min-height: calc(100vh - 100px);
+}
+
+.store-pitch {
+    text-align: center;
+    color: variables.$color-text-medium;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid variables.$color-border-dark;
+}
+
+.f1-store-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.category-card {
+    display: block;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid transparent;
+    background-color: variables.$color-darkest-bg;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: variables.$color-f1-red;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.category-card:hover .category-image {
+    opacity: 0.8;
+}
+
+.category-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0));
+    color: variables.$color-text-light;
+    z-index: 2;
+}
+
+.category-title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: variables.$color-text-light;
+    margin-bottom: 5px;
+}
+
+.category-count {
+    font-size: 0.95rem;
+    color: variables.$color-f1-yellow;
+    margin-bottom: 10px;
+}
+
+.view-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: variables.$color-f1-red;
+    text-transform: uppercase;
+}
+
+.category-polos {
+    border-left-color: map.get(variables.$team-colors, mclaren);
+}
+
+.category-gorras {
+    border-left-color: map.get(variables.$team-colors, mercedes);
+}
+
+.category-juguetes {
+    border-left-color: map.get(variables.$team-colors, redbull);
+}
+
+.category-merch {
+    border-left-color: map.get(variables.$team-colors, ferrari);
+}
+
+.f1-store-banner {
+    background-color: variables.$color-darkest-bg;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid variables.$color-border-dark;
+    margin-bottom: 40px;
+}
+
+.f1-store-banner h3 {
+    color: variables.$color-f1-red;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.f1-store-banner p {
+    color: variables.$color-text-medium;
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .f1-store-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 200px;
+    }
+
+    .category-title {
+        font-size: 1.4rem;
+    }
+}
