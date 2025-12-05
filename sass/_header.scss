@@ -1,0 +1,96 @@
+@use 'variables';
+
+.navbar-custom {
+    background-color: variables.$color-dark-bg !important;
+    border-bottom: 1px solid variables.$color-border-dark;
+    font-family: 'Arial', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar-custom .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+
+.navbar-custom .navbar-brand {
+    color: variables.$color-text-light;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+@keyframes f1-pulse {
+    0% {
+        color: variables.$color-text-light;
+        text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        color: variables.$color-f1-red; // El color de pulso
+        text-shadow: 0 0 10px variables.$color-f1-red;
+        transform: scale(1.02);
+    }
+
+    100% {
+        color: variables.$color-text-light;
+        text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+        transform: scale(1);
+    }
+}
+
+.f1-total-animated {
+    display: inline-block;
+    animation: f1-pulse 3s infinite ease-in-out;
+}
+
+
+.navbar-custom .navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.navbar-custom .nav-link {
+    color: variables.$color-text-medium;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-left: 20px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+    color: variables.$color-f1-red;
+
+}
+
+
+.navbar-custom .navbar-toggler {
+    border: none;
+    padding: 0;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+@media (max-width: 768px) {}

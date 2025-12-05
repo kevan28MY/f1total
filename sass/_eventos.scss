@@ -1,0 +1,222 @@
+@use 'variables';
+
+.f1-eventos-main {
+    padding: 40px 0;
+}
+
+.f1-eventos-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.f1-event-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.f1-event-item {
+    display: flex;
+    align-items: center;
+    background-color: variables.$color-darkest-bg;
+    border-left: 5px solid variables.$color-border-dark;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s, border-left-color 0.2s;
+}
+
+.f1-event-item:hover {
+    background-color: variables.$color-dark-bg;
+}
+
+.upcoming-event {
+    border-left: 5px solid variables.$color-f1-red;
+    box-shadow: 0 0 10px rgba(225, 6, 0, 0.4);
+}
+
+.event-date {
+    text-align: center;
+    margin-right: 20px;
+    font-family: 'Arial Black', sans-serif;
+    line-height: 1;
+}
+
+.event-date .day {
+    font-size: 2.2rem;
+    color: variables.$color-text-light;
+    display: block;
+}
+
+.event-date .month {
+    font-size: 0.9rem;
+    color: variables.$color-text-medium;
+    display: block;
+    text-transform: uppercase;
+}
+
+.event-date-highlight .day,
+.event-date-highlight .month {
+    color: variables.$color-f1-red;
+}
+
+.event-details {
+    flex-grow: 1;
+}
+
+.gp-name {
+    font-size: 1.2rem;
+    color: variables.$color-text-light;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.gp-name-highlight {
+    color: variables.$color-f1-yellow;
+}
+
+.gp-track {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.event-status span {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-live {
+    background-color: variables.$color-f1-red;
+    color: variables.$color-text-light;
+}
+
+.status-upcoming {
+    background-color: variables.$color-f1-yellow;
+    color: variables.$color-dark-bg;
+}
+
+.status-pending {
+    background-color: #555;
+    color: variables.$color-text-medium;
+}
+
+.f1-btn-schedule-full {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    padding: 15px;
+    background-color: variables.$color-dark-bg;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px solid variables.$color-border-dark;
+}
+
+.f1-btn-schedule-full:hover {
+    background-color: variables.$color-darkest-bg;
+    color: #55aaff;
+}
+
+.f1-meeting-registration {
+    background-color: variables.$color-darkest-bg;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border-top: 5px solid variables.$color-f1-orange;
+    margin-top: 40px;
+}
+
+.f1-meeting-registration h2 {
+    border-left-color: variables.$color-f1-orange;
+}
+
+.form-pitch {
+    color: variables.$color-text-medium;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    border-bottom: 1px solid variables.$color-border-dark;
+    padding-bottom: 20px;
+}
+
+.f1-form .form-group {
+    margin-bottom: 20px;
+}
+
+.f1-form label {
+    display: block;
+    color: variables.$color-text-light;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.f1-form .required {
+    color: variables.$color-f1-red;
+}
+
+.f1-form input[type="text"],
+.f1-form input[type="email"],
+.f1-form select {
+    width: 100%;
+    padding: 12px;
+    background-color: variables.$color-dark-bg;
+    border: 1px solid variables.$color-border-dark;
+    color: variables.$color-text-light;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.f1-form input::placeholder {
+    color: #666;
+}
+
+.f1-submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: variables.$color-f1-red;
+    color: variables.$color-text-light;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.f1-submit-btn:hover {
+    background-color: #ff5252;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: variables.$color-text-medium;
+}
+
+@media (max-width: 600px) {
+    .f1-event-item {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+    }
+
+    .event-details {
+        min-width: 150px;
+    }
+
+    .event-status {
+        margin-left: auto;
+    }
+}
